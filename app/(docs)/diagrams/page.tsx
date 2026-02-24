@@ -333,6 +333,11 @@ function ComponentInteractionDiagram() {
         role="img"
         aria-label="Взаємодія компонентів"
       >
+        <defs>
+          <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#64748b" />
+          </marker>
+        </defs>
         {/* Browser boundary */}
         <rect x="30" y="20" width="700" height="550" rx="16" fill="none" stroke="#2563eb" strokeWidth="2" strokeDasharray="8 4" />
         <text x="50" y="48" fontSize="14" fontWeight="bold" fill="#2563eb">{"Клієнт (Browser)"}</text>
